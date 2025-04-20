@@ -15,7 +15,7 @@ public class LC26_RemoveDuplicate {
                 nums[index]=nums[i];
                 index++;
             }
-        }
+        } 
         return index;
     }
 }
