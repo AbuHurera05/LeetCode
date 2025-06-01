@@ -1,7 +1,7 @@
 public class LC26_RemoveDuplicate {
 
     public static void main(String[] args) {
-        int[] arr={1,2,3,3,4,5,5,6};
+        int[] arr={0,0,1,1,1,2,2,3,3,4};
         int a= removeDuplicate(arr);
         System.err.println(a);
     }
