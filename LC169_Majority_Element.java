@@ -1,6 +1,6 @@
 public class LC169_Majority_Element {
    public static void main(String[] args) {
-      int nums[]={3,2,3,4,4,5,5,5,5};
+      int nums[]={3,3,4};
       int ans=majorityElement(nums);
       System.out.println(ans);
    }
@@ -8,8 +8,10 @@ public class LC169_Majority_Element {
       int ans=0;
       int count=0;
       for(int i=0;i<nums.length;i++){
-         if(count==0)
+         if(count==0){
             ans=nums[i];
+            count=1;
+         }
          else if(ans==nums[i])
             count++;
          else
